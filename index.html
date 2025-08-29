@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+<body id="body" class="scroll-smooth ">
+<nav class=" fixed w-full bg-gray-900 text-white font-[Ubuntu] flex justify-around items-center h-14 ">
+    <div class="text-2xl font-bold cursor-pointer select-none ">Al <span class="text-red-700 ">Moktadir</span></div>
+    <div class="flex ">
+        <ul class="flex gap-4 font-[Ubuntu] max-sm:hidden ">
+            <li><a class="transition-colors hover:text-red-700" href="#container">Home</a></li>
+            <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
+            <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
+            <li><a class="py-2 px-3 ml-3 bg-yellow-400 text-black text-center rounded-md transition-colors hover:text-red-700"
+                    href="#">Login</a></li>
+        </ul>
+        <span id="only-bar" class="text-white text-2xl relative right-[2rem] cursor-pointer min-sm:hidden ">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+    </div>
+    <div class=" hidden h-[100vh] w-[50vw] bg-gray-800 absolute top-14 right-0 indent-0 min-sm:hidden " id="menu">
+        <ul class="flex flex-col text-2xl gap-10 font-[Ubuntu] text-center mt-10">
+            <li><a class="transition-colors hover:text-red-700" href="#container">Home</a></li>
+            <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
+            <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
+            <li><a class="py-2 px-5 mt-5 bg-yellow-400 text-black text-center rounded-md transition-colors hover:text-red-700"
+                    href="#">Login</a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</nav>
+
+<div id="container" class="h-screen bg-blue-950">
+    
+</div>
+</body>
+
+</html>
