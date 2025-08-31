@@ -16,36 +16,64 @@
         rel="stylesheet">
 
 </head>
-<body id="body" class="scroll-smooth ">
-<nav class=" fixed w-full bg-gray-900 text-white font-[Ubuntu] flex justify-around items-center h-14 ">
-    <div class="text-2xl font-bold cursor-pointer select-none ">Al <span class="text-red-700 ">Moktadir</span></div>
-    <div class="flex ">
-        <ul class="flex gap-4 font-[Ubuntu] max-sm:hidden ">
-            <li><a class="transition-colors hover:text-red-700" href="#container">Home</a></li>
-            <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
-            <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
-            <li><a class="py-2 px-3 ml-3 bg-yellow-400 text-black text-center rounded-md transition-colors hover:text-red-700"
-                    href="#">Login</a></li>
-        </ul>
-        <span id="only-bar" class="text-white text-2xl relative right-[2rem] cursor-pointer min-sm:hidden ">
-            <i class="fa-solid fa-bars"></i>
-        </span>
-    </div>
-    <div class=" hidden h-[100vh] w-[50vw] bg-gray-800 absolute top-14 right-0 indent-0 min-sm:hidden " id="menu">
-        <ul class="flex flex-col text-2xl gap-10 font-[Ubuntu] text-center mt-10">
-            <li><a class="transition-colors hover:text-red-700" href="#container">Home</a></li>
-            <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
-            <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
-            <li><a class="py-2 px-5 mt-5 bg-yellow-400 text-black text-center rounded-md transition-colors hover:text-red-700"
-                    href="#">Login</a></li>
-        </ul>
-    </div>
-    <script src="script.js"></script>
-</nav>
 
-<div id="container" class="h-screen bg-blue-950">
-    
-</div>
+<body id="body" class="scroll-smooth ">
+    <nav class=" fixed w-full bg-gray-900 text-white font-[Ubuntu] flex justify-between items-center h-14">
+
+        <div class=" text-2xl font-bold cursor-pointer select-none ml-10 text-nowrap min-sm:ml-25 min-md:bg-red z-50 ">
+            Al <span class="text-red-700 ">Moktadir</span>
+        </div>
+        <div class="flex mr-15 min-sm:mr-25 ">
+            <ul class="flex gap-4 font-[Ubuntu] max-sm:hidden ">
+                <li><a class="transition-colors hover:text-red-700" href="#container">Home</a></li>
+                <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
+                <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
+                <li><a class="py-2 px-3 ml-3 bg-yellow-400 text-black text-center rounded-md transition-colors hover:text-red-700"
+                        href="#">Login</a></li>
+            </ul>
+
+            <span id="only-bar" class="text-white text-2xl relative right-[2rem] cursor-pointer min-sm:hidden ">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+
+        <div class=" hidden h-screen w-[50vw] bg-gray-800 absolute top-14 right-0  min-sm:hidden " id="menu">
+
+            <ul class="flex flex-col text-2xl gap-10 font-[Ubuntu] text-center mt-10">
+                <li><a class="transition-colors hover:text-red-700" href="">Home</a></li>
+                <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
+                <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
+                <li><a class="py-2 px-5 mt-5 bg-yellow-400 text-black text-center rounded-md transition-colors hover:text-red-700"
+                        href="#">Login</a></li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </nav>
+
+    <div class="h-screen w-screen bg-blue-900 pt-14 -z-2 absolute">
+
+        <div class=" pt-7 pl-10 min-sm:pl-25 text-white text-4xl min-sm:text-5xl font-[Oswald] text-nowrap relative min-sm:top-20  ">
+            <h1 class="">Lessons and insights<br>
+                <span class="text-red-600"> from 5 years </span>
+            </h1>
+
+            <span class="text-[12px] font-[Oswald] text-nowrap relative -top-5  ">Where to grow your business as a
+                photographer: site or social media?</span><br>
+            <button
+                class="text-white py-2.5 px-8 text-center font-[Ubuntu]  
+            border-2 border-white rounded-full text-[17px] min-sm:text-[20px] text-white-700 overflow-hidden transition-colors duration-300 hover:bg-red-700 ">
+
+                <span class="transition-colors duration-300 ">Register</span>
+
+                <i class="fa-solid fa-arrow-right inline-block transform transition-transform duration-300"></i>
+
+            </button>
+        </div>
+        <div class=" w-full flex justify-center min-sm:justify-end min-sm:pr-15 relative min-sm:bottom-40  items-center -z-10"> 
+            <img src="img/main.png" alt="" class="w-70 min-sm:w-[40vw] ">
+        </div>
+    </div>
+
 </body>
 
 </html>
