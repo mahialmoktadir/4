@@ -14,41 +14,125 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <section class="w-screen h-screen flex justify-center items-center">
-        <div class="flex bg-blue-200 rounded-2xl">
-            <div class="p-5 ">
-                <h2 class="text-2xl font-medium font-[Ubuntu] pt-3 pl-3">Login</h2>
-                <p class="pl-3 text-sm">If you already a member, easily log in</p>
+<body class="min-h-screen bg-gradient-animate flex items-center justify-center p-4">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden  ">
 
-                <form action="" class="flex flex-col gap-3 pt-5">
-                    <input type="email" class="border rounded-2xl p-2 text-start" placeholder="Email">
-                    <input type="password" class="border rounded-2xl p-2 text-start" placeholder="password">
-                    <button class="cursor-pointer py-2 text-[18px] text-white bg-blue-700 rounded-2xl ">
-                        Login
+        <div class="absolute -top-10 -left-4 w-72 h-72 bg-white opacity-10 rounded-full animate-float"></div>
+        <div class="absolute bottom-10 -right-4 w-96 h-96 bg-purple-300 opacity-10 rounded-full animate-float" style="animation-delay: 2s"></div>
+        <div class="absolute top-1/2 left-1/4 w-64 h-64 bg-blue-200 opacity-10 rounded-full animate-float" style="animation-delay: 4s"></div>
+    </div>
+
+    <div class="relative w-full max-w-md">
+        
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-white/20">
+            <div class="px-8 py-12">
+                
+                <div class="text-center mb-10">
+                    <h1 class="text-4xl font-bold text-white animate-pulse-slow">Login</h1>
+                    <p class="text-white/80 mt-2 animate-pulse" style="animation-delay: 0.5s">Sign in to continue your journey</p>
+                </div>
+
+                
+                <form class="space-y-6">
+                    <div class="space-y-2">
+                        <label for="email" class="block text-sm font-medium text-white">Email Address</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-envelope text-blue-400"></i>
+                            </div>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                class="bg-white/5 border border-white/10 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3 placeholder-white/40" 
+                                placeholder="name@gmail.com"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="password" class="block text-sm font-medium text-white">Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-lock text-blue-400"></i>
+                            </div>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                class="bg-white/5 border border-white/10 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3 placeholder-white/40" 
+                                placeholder="••••••••" 
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input 
+                                id="remember-me" 
+                                name="remember-me" 
+                                type="checkbox" 
+                                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-white/10 rounded"
+                            >
+                            <label for="remember-me" class="ml-2 block text-sm text-white">Remember me</label>
+                        </div>
+
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-blue-300 hover:text-blue-200 transition-colors duration-300">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="btn-hover-effect w-full py-3 px-4 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 flex items-center justify-center space-x-2"
+                    >
+                        <span>Login</span>
+                        <i class="fas fa-arrow-right animate-bounce-slow"></i>
                     </button>
                 </form>
 
-                <div class="text-gray-500 grid grid-cols-3 justify-center items-center mt-3 mb-3 ">
-                    <hr>
-                    <p class="text-center">OR</p>
-                    <hr>
-                </div>
+                <div class="mt-8">
+                    <div class="relative">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-white/20"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-2 bg-transparent text-white/80">Or continue with</span>
+                        </div>
+                    </div>
 
-                <div class="cursor-pointer bg-blue-700 text-white py-2 rounded-2xl flex justify-around items-center">
-                    <i class="fa-brands fa-google"></i>
-                    <p>Login With Google</p>
+                    <div class="mt-6 grid grid-cols-3 gap-3">
+                        <div>
+                            <a href="#" class="btn-hover-effect w-full inline-flex justify-center py-2 px-4 border border-white/10 rounded-md shadow-sm bg-white/5 text-sm font-medium text-white hover:bg-white/10 transition-all duration-300">
+                                <i class="fab fa-facebook-f text-blue-700"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-hover-effect w-full inline-flex justify-center py-2 px-4 border border-white/10 rounded-md shadow-sm bg-white/5 text-sm font-medium text-white hover:bg-white/10 transition-all duration-300">
+                                <i class="fab fa-google text-red-700"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-hover-effect w-full inline-flex justify-center py-2 px-4 border border-white/10 rounded-md shadow-sm bg-white/5 text-sm font-medium text-white hover:bg-white/10 transition-all duration-300">
+                                <i class="fab fa-github text-purple-700"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="text-sm mt-3 ">
-                    <p class="font-light">Don't have an account?
-                        <a href="sing-up.html" class="font-medium underline">Sing up for free</a>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-white/80">
+                        Don't have an account? 
+                        <a href="sing-up.html" class="font-medium text-blue-300 hover:text-blue-200 transition-colors duration-300 ml-1">Create</a>
                     </p>
                 </div>
             </div>
-
         </div>
-    </section>
+        
+        <!-- Footer -->
+        <div class="mt-8 text-center">
+            <p class="text-white/60 text-sm">&copy; 2025 MaHi Al-Moktadir. All rights reserved.</p>
+        </div>
+    </div>
 </body>
-
 </html>
