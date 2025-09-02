@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Al-Moktadir</title>
     <link href="/src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
@@ -17,29 +17,33 @@
 
 </head>
 
-<body id="body" class="scroll-smooth ">
-    <nav class=" fixed w-full bg-gray-900 text-white font-[Ubuntu] flex justify-between items-center h-14">
-        
-        <!-- header -->
+<body id="body" class="scroll-smooth font-[Ubuntu] bg-white">
 
-        <div class=" text-2xl font-bold cursor-pointer select-none ml-10 text-nowrap min-sm:ml-25 min-md:bg-red z-50 ">
-            Al <span class="text-red-700 ">Moktadir</span>
-        </div>
-        <div class="flex mr-15 min-sm:mr-25 ">
-            <ul class="flex gap-4 font-[Ubuntu] max-sm:hidden ">
-                <li><a class="transition-colors hover:text-red-700" href="#container">Home</a></li>
-                <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
-                <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
-                <li><a class="py-2 px-3 ml-3 bg-yellow-400 text-black text-center rounded-md transition-colors hover:text-red-700"
-                        href="login-page.html" target="_blank">Login</a></li>
-            </ul>
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center h-14 px-6 z-50">
+    <!-- Logo -->
+    <div class="text-2xl font-bold cursor-pointer select-none">
+      Al <span class="text-red-600">Moktadir</span>
+    </div>
 
-            <span id="only-bar" class="text-white text-2xl relative right-[2rem] cursor-pointer min-sm:hidden ">
+    <!-- Desktop Menu -->
+    <ul class="hidden sm:flex gap-6 items-center">
+      <li><a class="transition-colors hover:text-red-600" href="#home">Home</a></li>
+      <li><a class="transition-colors hover:text-red-600" href="#about">About</a></li>
+      <li><a class="transition-colors hover:text-red-600" href="#contact">Contact</a></li>
+      <li>
+        <a class="py-2 px-4 bg-yellow-400 text-black rounded-md transition-colors hover:bg-yellow-500"
+          href="login-page.html" target="_blank">Login</a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Icon -->
+   <span id="only-bar" class="text-white text-2xl relative right-[2rem] cursor-pointer min-sm:hidden ">
                 <i class="fa-solid fa-bars"></i>
             </span>
         </div>
 
-        <div class=" hidden h-screen w-[50vw] bg-gray-800 absolute top-14 right-0  min-sm:hidden " id="menu">
+        <div class=" hidden h-screen w-[50vw] bg-gray-800 absolute top-14 right-0  min-sm:hidden  " id="menu">
 
             <ul class="flex flex-col text-2xl gap-10 font-[Ubuntu] text-center mt-10">
                 <li><a class="transition-colors hover:text-red-700" href="">Home</a></li>
@@ -49,37 +53,39 @@
                         href="login-page.html" target="_blank">Login</a></li>
             </ul>
         </div>
-        <script src="script.js"></script>
-    </nav>
+  </nav>
 
-    <!-- main content -->
-
-    <div class="h-screen w-screen bg-blue-900 pt-14 -z-2 absolute">
-
-        <div
-            class=" pt-7 pl-10 min-md:pl-25 text-white text-4xl min-md:text-6xl font-[Oswald] text-nowrap relative min-md:top-20  ">
-            <h1 class="">Lessons and insights<br>
-                <span class="text-red-600"> from 5 years </span>
-            </h1>
-
-            <span class="text-[12px] font-[Oswald] text-nowrap relative -top-5  ">Where to grow your business as a
-                photographer: site or social media?</span><br>
-            <a href="sing-up.html"
-                class="cursor-pointer text-white py-2.5 px-8 text-center font-[Ubuntu]  
-            border-2 border-white rounded-full text-[17px] min-md:text-[25px] text-white-700 overflow-hidden transition-colors duration-300 hover:bg-red-700 ">
-
-                <span class="transition-colors duration-300 " target="_blank"> Register</span>
-
-                <i class="fa-solid fa-arrow-right inline-block transform transition-transform duration-300"></i>
-
-            </a>
-        </div>
-        <div
-            class=" w-full flex justify-center min-md:justify-end min-md:pr-15 relative min-md:bottom-40  items-center -z-10">
-            <img src="img/main.png" alt="" class="w-70 min-sm:w-90 min-md:w-[35vw] ">
-        </div>
+  <!-- Hero Section -->
+  <section id="home" class="w-full bg-blue-200 pt-24 pb-12 flex flex-col md:flex-row items-center justify-between px-10">
+    <!-- Text -->
+    <div class="max-w-lg">
+      <h1 class="text-4xl md:text-6xl font-[Oswald] mb-4">
+        Lessons and insights<br />
+        <span class="text-red-600">from 5 years</span>
+      </h1>
+      <p class="text-sm md:text-base mb-6">
+        Where to grow your business as a photographer: site or social media?
+      </p>
+      <a href="sign-up.html"
+        class="inline-block py-2.5 px-8 border-2 border-blue-800 text-blue-800 rounded-full text-lg md:text-xl font-[Ubuntu] transition-colors hover:bg-indigo-400 hover:text-white">
+        Register <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
     </div>
 
+    <!-- Image -->
+    <div class="mt-10 md:mt-0">
+      <img src="img/main.png" alt="Main Illustration" class="w-60 sm:w-80 md:w-[35vw]" />
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section class="py-10 text-center text-black">
+    <h2 class="text-3xl font-bold mb-2">Our Clients</h2>
+    <p class="text-gray-700">We have been working with some Fortune 500+ clients</p>
+  </section>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 
 </html>
