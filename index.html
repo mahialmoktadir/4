@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Al-Moktadir</title>
   <link href="/src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,19 +16,20 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
 
+
 </head>
 
-<body id="body" class="scroll-smooth font-[Ubuntu] bg-white">
+<body id="body" class="scroll-smooth font-[Ubuntu] bg-gray-100 md:px-15 ">
 
   <!-- Navbar -->
   <nav class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center h-14 px-6 z-50">
     <!-- Logo -->
-    <div class="text-2xl font-bold cursor-pointer select-none">
+    <div class="slide-left text-2xl pl-10 font-bold cursor-pointer select-none">
       Al <span class="text-red-600">Moktadir</span>
     </div>
 
     <!-- Desktop Menu -->
-    <ul class="hidden sm:flex gap-6 items-center">
+    <ul class="slide-right hidden sm:flex gap-6 items-center pr-10">
       <li><a class="transition-colors hover:text-red-600" href="#home">Home</a></li>
       <li><a class="transition-colors hover:text-red-600" href="#about">About</a></li>
       <li><a class="transition-colors hover:text-red-600" href="#contact">Contact</a></li>
@@ -38,14 +40,14 @@
     </ul>
 
     <!-- Mobile Menu Icon -->
-    <span id="only-bar" class="text-white text-2xl relative right-[2rem] cursor-pointer min-sm:hidden ">
+    <span id="only-bar" class="slide-right text-white text-2xl relative right-[2rem] cursor-pointer min-sm:hidden ">
       <i class="fa-solid fa-bars"></i>
     </span>
     </div>
 
-    <div class=" hidden h-screen w-[50vw] bg-gray-800 absolute top-14 right-0  min-sm:hidden  " id="menu">
+    <div class="hidden h-screen w-[50vw] bg-gray-800 absolute top-14 right-0  min-sm:hidden  " id="menu">
 
-      <ul class="flex flex-col text-2xl gap-10 font-[Ubuntu] text-center mt-10">
+      <ul class="reveal flex flex-col text-2xl gap-10 font-[Ubuntu] text-center mt-10">
         <li><a class="transition-colors hover:text-red-700" href="">Home</a></li>
         <li><a class="transition-colors hover:text-red-700" href="">About</a></li>
         <li><a class="transition-colors hover:text-red-700" href="">Contract</a></li>
@@ -58,24 +60,24 @@
 
   <!-- Hero Section -->
   <section id="home"
-    class="w-full bg-blue-200 pt-24 pb-12 flex flex-col md:flex-row items-center justify-between px-10">
+    class="w-full h-screen bg-blue-200 pt-24 pb-12 flex flex-col md:flex-row items-center justify-between px-10">
     <!-- Text -->
-    <div class="max-w-lg">
-      <h1 class="text-4xl md:text-6xl font-[Oswald] mb-4">
+    <div class="max-w-lg ">
+      <h1 class="slide-left text-4xl md:text-6xl font-[Oswald] mb-4">
         Lessons and insights<br />
         <span class="text-red-600">from 5 years</span>
       </h1>
-      <p class="text-sm md:text-base mb-6">
+      <p class="slide-right text-sm md:text-base mb-6">
         Where to grow your business as a photographer: site or social media?
       </p>
       <a href="sign-up.html"
-        class="inline-block py-2.5 px-8 border-2 border-blue-800 text-blue-800 rounded-full text-lg md:text-xl font-[Ubuntu] transition-colors hover:bg-indigo-400 hover:text-white">
+        class="reveal inline-block py-2.5 px-8 border-2 border-blue-800 text-blue-800 rounded-full text-lg md:text-xl font-[Ubuntu] transition-colors hover:bg-indigo-400 hover:text-white">
         Register <i class="fa-solid fa-arrow-right ml-2"></i>
       </a>
     </div>
 
     <!-- Image -->
-    <div class="mt-10 md:mt-0">
+    <div class="fade-in mt-10 md:mt-0">
       <img src="img/main.png" alt="Main Illustration" class="w-60 sm:w-80 md:w-[35vw]" />
     </div>
 
@@ -83,12 +85,12 @@
   </section>
 
   <!-- Clients Section -->
-  <section class="py-10 text-center text-black">
-    <h2 class="text-3xl font-bold mb-2">Our Clients</h2>
-    <p class="text-gray-700">We have been working with some Fortune 500+ clients</p>
+  <section class="fade-in py-10 text-center text-black bg-white">
+    <h2 class="reveal ext-3xl font-bold mb-2">Our Clients</h2>
+    <p class="reveal text-gray-700">We have been working with some Fortune 500+ clients</p>
 
     <!-- Client company logo -->
-    <div class="grid grid-cols-4 place-items-center pt-10 pb-20 ">
+    <div class="reveal grid grid-cols-4 place-items-center pt-10 pb-20 ">
       <img src="/img/2.png" alt="" class="w-30  ">
       <img src="/img/1.png" alt="" class="w-30  ">
       <img src="/img/3.png" alt="" class="w-30  ">
@@ -96,41 +98,243 @@
     </div>
 
     <!-- Work Purpose titile-->
-    <h2 class="text-3xl font-bold mb-2">Manage your entire community <br>
+    <h2 class="reveal text-3xl font-bold mb-2">Manage your entire community <br>
       in a single system</h2>
-    <p class="text-gray-700">Who is Nextcent suitable for?</p>
+    <p class="reveal text-gray-700">Who is Nextcent suitable for?</p>
 
     <!-- Work Purpose-->
-    <div class="text-2xl font-bold text-center grid sm:flex justify-evenly gap-10 pt-10 pb-20">
-      <h1 class="w-[227px]"><i class="fa-solid fa-users text-green-500 text-3xl"></i><br>Membership <br>Organisations <br>
-      <p class="font-normal text-[12px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic illo velit minima deserunt at veniam recusandae alias modi fugit.</p>
+    <div class="reveal text-2xl font-bold text-center grid sm:flex justify-evenly gap-10 pt-10 pb-20">
+      <h1 class="w-[227px]"><i class="fa-solid fa-users text-green-500 text-3xl"></i><br>Membership <br>Organisations
+        <br>
+        <p class="font-normal text-[12px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic illo velit
+          minima deserunt at veniam recusandae alias modi fugit.</p>
       </h1>
-      <h1 class="w-[227px]"><i class="fa-solid fa-building-columns text-green-500 text-3xl"></i><br>National <br>Associations <br>
-      <p class="font-normal text-[12px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic illo velit minima deserunt at veniam recusandae alias modi fugit.</p>
+      <h1 class="w-[227px]"><i class="fa-solid fa-building-columns text-green-500 text-3xl"></i><br>National
+        <br>Associations <br>
+        <p class="font-normal text-[12px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic illo velit
+          minima deserunt at veniam recusandae alias modi fugit.</p>
       </h1>
-      <h1 class="w-[227px]"><i class="fa-solid fa-layer-group text-green-500 text-3xl"></i><br>Clubs And <br> Groups <br>
-      <p class="font-normal text-[12px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic illo velit minima deserunt at veniam recusandae alias modi fugit.</p>
+      <h1 class="w-[227px]"><i class="fa-solid fa-layer-group text-green-500 text-3xl"></i><br>Clubs And <br> Groups
+        <br>
+        <p class="font-normal text-[12px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic illo velit
+          minima deserunt at veniam recusandae alias modi fugit.</p>
       </h1>
     </div>
 
     <!-- last div -->
-     <div class="grid grid-cols-1 sm:grid-cols-2 place-items-center">
-      <img src="/img/Frame-35.png" alt="" class="h-[360px]">
-      <div class="text-start w-[80%]"> 
+    <div class="grid grid-cols-1 sm:grid-cols-2 place-items-center">
+      <img src="/img/Frame-35.png" alt="" class="slide-left h-[360px]">
+      <div class="slide-right text-start w-[80%]">
         <h1 class="text-4xl font-bold ">The unseen of spending three <br> years at Pixelgrade.</h1>
-        <p class="font-light pt-5 pb-7 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium, eaque, ullam eius necessitatibus nisi esse delectus ut nam veniam odit sint alias iusto, deleniti repellat dolor. Error accusantium debitis ab quisquam nihil molestias reprehenderit ullam harum maiores laudantium, distinctio deserunt neque iste possimus temporibus rem veritatis maxime, sit eligendi.</p>
-        <buton class="cursor-pointer bg-green-400 p-5 rounded-[10px] font-light transition-colors hover:bg-green-700 ">Learn More..</buton>
+        <p class="font-light pt-5 pb-7 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium,
+          eaque, ullam eius necessitatibus nisi esse delectus ut nam veniam odit sint alias iusto, deleniti repellat
+          dolor. Error accusantium debitis ab quisquam nihil molestias reprehenderit ullam harum maiores laudantium,
+          distinctio deserunt neque iste possimus temporibus rem veritatis maxime, sit eligendi.</p>
+        <buton class="cursor-pointer bg-green-400 p-5 rounded-[10px] font-light transition-colors hover:bg-green-700 ">
+          Learn More..</buton>
       </div>
-
-     </div>
+    </div>
   </section>
+
 
   <!-- section 3 -->
-  <section>
+  <section class="py-20 flex justify-evenly flex-col lg:flex-row bg-green-100">
+
+  <!-- textarea -->
+  <div class="reveal text-center lg:text-start pr-10 ">
+    <h1 class="reveal text-4xl font-bold py-5">Helping a local <br> <span class="text-red-600">reinvent itself</span></h1>
+    <p>We reached here with our hard work and dedication</p>
+  </div>
+
+  <!-- people -->
+  <div class="reveal grid grid-cols-1 gap-5 sm:grid-cols-2 place-self-center place-content-center pt-10 pr-8 lg:pt-0">
+    <div class="flex gap-3" data-reveal>
+      <i class="fa-solid fa-users-line text-3xl"></i>
+      <div>
+        <h1 class="text-3xl font-bold"><span class="odometer" data-target="2245341"></span></h1>
+        <p>Members</p>
+      </div>
+    </div>
+    <div class="flex gap-3" data-reveal>
+      <i class="fa-solid fa-circle-nodes text-3xl "></i>
+      <div>
+        <h1 class="text-3xl font-bold"><span class="odometer" data-target="46328"></span></h1>
+        <p>Clubs</p>
+      </div>
+    </div>
+    <div class="flex gap-3" data-reveal>
+      <i class="fa-solid fa-calendar-days text-3xl"></i>
+      <div>
+        <h1 class="text-3xl font-bold"><span class="odometer" data-target="828867"></span></h1>
+        <p>Event Bookings</p>
+      </div>
+    </div>
+    <div class="flex gap-3" data-reveal>
+      <i class="fa-solid fa-credit-card text-3xl"></i>
+      <div>
+        <h1 class="text-3xl font-bold"><span class="odometer" data-target="1926436"></span></h1>
+        <p>Payments</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 4 -->
+<section class="py-20 bg-white">
+  <div class="grid grid-cols-1 sm:grid-cols-2 place-items-center py-20">
+      <img src="/img/pana.png" alt="" class="slide-left h-[360px]">
+      <div class="slide-right text-start w-[80%]">
+        <h1 class="text-4xl font-bold ">How to design your site footer like we did</h1>
+        <p class="font-light pt-5 pb-7 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium,
+          eaque, ullam eius necessitatibus nisi esse delectus ut nam veniam odit sint alias iusto, deleniti repellat
+          dolor. Error accusantium debitis ab quisquam nihil molestias reprehenderit ullam harum maiores laudantium,
+          distinctio deserunt neque iste possimus temporibus rem veritatis maxime, sit eligendi.</p>
+        <buton class="cursor-pointer bg-green-400 p-5 rounded-[10px] font-light transition-colors hover:bg-green-700 ">
+          Learn More..</buton>
+      </div>
+      </div>
+  <div class="bg-green-100 grid grid-cols-1 sm:grid-cols-2 place-items-center py-20 ">
+      <img src="/img/image-92.png" alt="" class="slide-left h-[360px]">
+      <div class="slide-right text-start w-[80%]">
+        <h1 class="text-4xl font-bold ">How to design your site footer like we did</h1>
+        <p class="font-light pt-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium,
+          eaque, ullam eius necessitatibus nisi esse delectus ut nam veniam odit sint alias iusto, deleniti repellat
+          dolor. Error accusantium debitis ab quisquam nihil molestias reprehenderit ullam harum maiores laudantium,
+          distinctio deserunt neque iste possimus temporibus rem veritatis maxime, sit eligendi.</p>
+        <buton class="text-green-400 text-2xl">Tom Smith</buton><br>
+        <buton class="text-gray-400">British Dragon Boat Racing Association</buton>
+        <div>
+          <div class="flex gap-3">
+            <img src="/img/Logo8.png" alt="" class="w-5 py-5">
+            <img src="/img/Logo3.png" alt="" class="w-5 py-5">
+            <img src="/img/Logo4.png" alt="" class="w-5 py-5">
+            <img src="/img/Logo5.png" alt="" class="w-5 py-5">
+            <img src="/img/Logo6.png" alt="" class="w-5 py-5">
+            <img src="/img/Logo7.png" alt="" class="w-5 py-5">
+            <img src="/img/Logo2.png" alt="" class="w-5 py-5">
+          </div>
+          <h1 class="text-2xl font-bold text-green-400 underline cursor-pointer">Meet all customers →</h1>
+        </div>
+      </div>
+      </div>
+</section>
+
+<!-- Back to Top Water Button -->
+<button id="backToTop" 
+  class="fixed bottom-5 right-5 w-16 h-16 rounded-full overflow-hidden shadow-lg border-2 border-green-400 hidden">
+  <div class="relative w-full h-full">
+    <div class="absolute inset-0 bg-white"></div>
+    <div id="water" class="absolute bottom-0 left-0 w-full h-0 bg-blue-500 overflow-hidden">
+      <svg class="absolute bottom-0 left-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill="rgba(255,255,255,0.4)">
+          <animate attributeName="d" dur="4s" repeatCount="indefinite"
+            values="
+            M0 20 Q30 0 60 20 T120 20 V100 H0 Z;
+            M0 20 Q30 40 60 20 T120 20 V100 H0 Z;
+            M0 20 Q30 0 60 20 T120 20 V100 H0 Z
+            " />
+        </path>
+      </svg>
+    </div>
+
+    <div class="absolute inset-0 flex items-center justify-center text-xl font-bold text-green-400">
+      ↑
+    </div>
+  </div>
+</button>
+
+
+<!-- Blog Section -->
+<section class="py-20 bg-white text-center">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="fade-in text-4xl font-bold mb-6">Caring is the new marketing</h2>
+    <p class="fade-in text-gray-700 mb-12">The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.</p>
     
-  </section>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Blog Post 1 -->
+      <div class="reveal bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+        <img src="/img/image-18.png" alt="Blog post image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3">Creating Streamlined Safeguarding Processes with OneRen Beside them</h3>
+          <a href="#" class="text-green-500 font-medium flex items-center">
+            Readmore <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Blog Post 2 -->
+      <div class="reveal bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+        <img src="/img/image-19.png" alt="Blog post image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3">What are your safeguarding responsibilities and how can you manage them?</h3>
+          <a href="#" class="text-green-500 font-medium flex items-center">
+            Readmore <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Blog Post 3 -->
+      <div class="reveal bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+        <img src="/img/image-20.png" alt="Blog post image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3">Revamping the Membership Model with Triathlon Australia and England</h3>
+          <a href="#" class="text-green-500 font-medium flex items-center">
+            Readmore <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<!-- Footer Section -->
+<footer class="reveal bg-gray-900 text-white py-16">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6">Nexcent</h3>
+        <p class="text-gray-400">Copyright © 2025 bangladesh Mahi al-moktadir. All rights reserved</p>
+      </div>
+      
+      <!-- Company Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-6">Company</h4>
+        <ul class="space-y-4">
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About us</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+        </ul>
+      </div>
+      
+      <!-- Support Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-6">Support</h4>
+        <ul class="space-y-4">
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help center</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of service</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Legal</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy policy</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Status</a></li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div>
+        <h4 class="text-lg font-semibold mb-6">Stay up to date</h4>
+        <div class="flex">
+          <input type="email" placeholder="Your email address" class="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 w-full">
+          <button class="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 transition-colors">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <!-- Script -->
   <script src="script.js"></script>

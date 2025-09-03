@@ -1,0 +1,50 @@
+
+/* Back to Top Button */
+#backToTop {
+  background: transparent;
+}
+
+#water {
+  transition: height 0.4s ease;
+}
+
+/* ---------- Animations ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left & Right Slide Animations */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease-out;
+}
+.slide-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease-out;
+}
+.slide-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade-in for text */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.fade-in.active {
+  opacity: 1;
+}
